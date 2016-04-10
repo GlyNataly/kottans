@@ -1,0 +1,113 @@
+body {
+  min-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 30% 0 30%;
+}
+
+#templates {
+  display: none;
+}
+
+#content {
+  text-align: justify;  
+  text-align-last: justify;
+}
+
+.listItem {
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;  
+  height : 210px;
+  border : 1px solid black;
+  margin : 5px;
+  padding: 5px;
+  width: 140px;
+}
+
+.image {    
+  height: 130px;  
+  position: relative;
+  border: 1px solid gray;
+  line-height: 125px;
+  text-align: center;  
+}
+
+.image img {
+  vertical-align: middle;
+  max-width: 130px;
+}
+
+.listItem .name {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.type {
+  float: left; margin: 2px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 2px;
+  width: 50px;
+  text-align: center;
+  background: linear-gradient(to top, #f1da36, #fefcea)
+}
+
+#loadMore {
+  text-align: center;
+}
+
+#loadMore button {
+  width : 300px;
+  margin: 2px;
+  height : 40px;
+  border : 1px solid #778899;
+  background : #1E90FF;
+  color : white;
+  font-size : 15px;
+  border-radius : 10px;
+  font-family : Arial, sans-serif;
+  font-weight: 800;
+}
+
+#loading {
+  display: none;
+}
+
+#details {
+  display: none;
+  position: fixed;
+  right: 0;  
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 10px;
+  padding: 5px;
+  border : 1px solid black;
+  width: 200px;
+  height: 344px;  
+}
+
+#details table {
+  margin-top: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+#details table td {
+  border: 1px solid black;
+}
+
+#details table td:first-child {
+  width: 140px;
+}
+
+#mainView {  
+  margin-right: 210px;
+}

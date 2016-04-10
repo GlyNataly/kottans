@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Pokedex</h1>
+    <div id="details">
+      
+    </div>
+    
+    <div id="mainView">
+      Types: <input id="typesFilter" type="text" />
+      <div id="content">          
+      </div>
+      <div style="clear:both"></div>      
+      <div id="loadMore">
+        <span id="loading">Loading...</span>      
+        <button >Load More</button>
+      </div>      
+    </div>
+    
+    <div id="templates">
+      <div>
+        <div class="listItem">
+          <div class="image">
+            <img data-src="{image}"/>
+          </div>                    
+          <div class="name">{name}</div>          
+          <div class="types">{htmlTypes}</div> 
+        </div>
+      </div>      
+      <div>
+        <div class="type">{name}</div>
+      </div>      
+      <div>
+        <div class="detailsTemplate">
+          <div class="image">
+            <img data-src="{image}"/>
+          </div>
+          <table>
+              <tr><td>Type</td><td>{allTypes}</td></tr>
+              <tr><td>Attack</td><td>{attack}</td></tr>
+              <tr><td>Defense</td><td>{defense}</td></tr>
+              <tr><td>HP</td><td>{hp}</td></tr>
+              <tr><td>SP Attack</td><td>{sp_atk}</td></tr>
+              <tr><td>SP Defense</td><td>{sp_def}</td></tr>
+              <tr><td>Speed</td><td>{speed}</td></tr>
+              <tr><td>Weight</td><td>{weight}</td></tr>
+              <tr><td>Total moves</td><td>{totalMoves}</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
