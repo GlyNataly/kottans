@@ -90,7 +90,7 @@ h1 {
   padding: 5px;
   border : 1px solid black;
   width: 200px;
-  height: 344px;  
+  height: 376px;  
 }
 
 #details table {
@@ -106,6 +106,12 @@ h1 {
 
 #details table td:first-child {
   width: 140px;
+}
+
+#details .name {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold; 
 }
 
 #mainView {  
