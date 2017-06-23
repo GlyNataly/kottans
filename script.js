@@ -25,7 +25,7 @@ function addChunck() {
     for(var i = 0; i < data.objects.length; i++){
       var current = data.objects[i];
       
-      current.image = "http://pokeapi.co/media/img/" + current.pkdx_id + ".png";
+      current.image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + current.pkdx_id + ".png";
       current.htmlTypes = fillTemplate(".type", current.types);
       current.totalMoves = current.moves.length;
       current.allTypes = "";
